@@ -32,31 +32,37 @@
         <textarea name="applicantReason" rows="4" cols="50">Get deep here</textarea>
       </label>
 
-      <fieldset>
+      <fieldset class="checkbox">
         <legend>What types of animal are you interested in?</legend>
         <!-- the name labels the information when the form is submitted -->
         <!-- we are also defining the value versus filling in the blank -->
-        <label>Dogs
-          <input type="checkbox" name="species" value="dogs">
+        <label>
+          <input type="checkbox" name="species" value="dog">Dog
+          <span class="checkmark"></span>
         </label>
-        <label>Cats
-          <input type="checkbox" name="species" value="cats">
+        <label>
+          <input type="checkbox" name="species" value="cat">Cat
+          <span class="checkmark"></span>
         </label>
-        <label>Foxes
-          <input type="checkbox" name="species" value="foxes">
+        <label>
+          <input type="checkbox" name="species" value="fox">Fox
+          <span class="checkmark"></span>
         </label>
-        <label>Parrots
-          <input type="checkbox" name="species" value="parrots">
+        <label>
+          <input type="checkbox" name="species" value="parrot">Parrot
+          <span class="checkmark"></span>
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="radio">
         <legend>Are you interested in adopting special needs or elderly animals?</legend>
-        <label>Yes
-          <input type="radio" name="special" value="yes">
+        <label>
+          <input type="radio" name="special" value="yes">Yes
+          <span class="radiobutton"></span>
         </label>
-        <label>No
-          <input type="radio" name="special" value="no">
+        <label>
+          <input type="radio" name="special" value="no">No
+          <span class="radiobutton"></span>
         </label>
       </fieldset>
 
@@ -68,6 +74,14 @@
           <option value="many">more than 16</option>
         </select>
       </label>
+
+    <label>Select multiple example
+      <select name="cats" size="3" multiple>
+        <option value="Grumpy Cat">Grumpy Cat</option>
+        <option value="Garfield">Garfield</option>
+        <option value="Tom">Tom</option>
+      </select>
+    </label>
 
       <label>To create account, enter a password:
         <input type="password" name="accountPW">
