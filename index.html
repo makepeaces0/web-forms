@@ -28,6 +28,47 @@
         <input type="number" name="petCount">
       </label>
 
+      <label>Why do you want to adopt?
+        <textarea name="applicantReason" rows="4" cols="50">Get deep here</textarea>
+      </label>
+
+      <fieldset>
+        <legend>What types of animal are you interested in?</legend>
+        <!-- the name labels the information when the form is submitted -->
+        <!-- we are also defining the value versus filling in the blank -->
+        <label>Dogs
+          <input type="checkbox" name="species" value="dogs">
+        </label>
+        <label>Cats
+          <input type="checkbox" name="species" value="cats">
+        </label>
+        <label>Foxes
+          <input type="checkbox" name="species" value="foxes">
+        </label>
+        <label>Parrots
+          <input type="checkbox" name="species" value="parrots">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Are you interested in adopting special needs or elderly animals?</legend>
+        <label>Yes
+          <input type="radio" name="special" value="yes">
+        </label>
+        <label>No
+          <input type="radio" name="special" value="no">
+        </label>
+      </fieldset>
+
+      <label>How many hours a day is someone usually home to keep company?
+        <select name="hours">
+          <option value="">Please select</option>
+          <option value="few">Less than 10</option>
+          <option value="some">10 to 16</option>
+          <option value="many">more than 16</option>
+        </select>
+      </label>
+
       <label>To create account, enter a password:
         <input type="password" name="accountPW">
       </label>
