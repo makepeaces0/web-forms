@@ -1,10 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Web Forms</title>
   </head>
   <body>
+    <h1>Pet Adoption Applications</h1>
 
+    <form method="GET">
+      <label>Your Name:
+        <input type="text" name="applicantName">
+        <!-- camelcase used for javascript -->
+        <!-- labels are needed for all inputs except submit -->
+      </label>
+
+      <label>Your Email:
+        <input type="email" name="applicantEmail">
+        <!-- Some browsers validate content typed in based on type -->
+      </label>
+
+        <!-- the other label syntax -->
+      <label for="city">What city are you in?</label>
+      <input id="city" type="text" name="applicantCity">
+
+      <label>How many pets are in your home?
+        <input type="number" name="petCount">
+      </label>
+
+      <label>To create account, enter a password
+        <input type="password" name="accountPW">
+      </label>
+
+      <input type="submit" value="Apply Now!">
+      <!-- submit inputs do not need labels -->
+
+    </form>
   </body>
 </html>
